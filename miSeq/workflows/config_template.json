@@ -1,0 +1,50 @@
+{
+  "analysis":{
+        "sample_id": "",
+      "analysis_type": ".",
+      "analysis_dir": "/home/jlanillos/Disco4tb/Projects/miSeq/results/20171026/",
+      "script": "scripts/",
+      "log":  "logs/",
+      "result": "<SAMPLE_NAME>_results/",
+      "gatk4": "/home/.../gatk-4.0.5.1/gatk-package-4.0.5.1-local.jar"
+  },
+  "path": {
+      "genomefa": "/home/.../refGen/",
+      "fastq": "/home/.../data_dir/",
+      "panel": "/home/.../refGen/",
+      "vep": "/home/.../ensembl-vep/",
+      "code":"/home/.../src/workflows/"
+  },
+  "references": {
+      "genomefa": "GRCh37_75/Homo_sapiens.GRCh37.75.dna.toplevel.fa",
+      "dbsnp": ".../dbsnp_138.b37.vcf",
+      "dbindels": ".../1000G_phase1.indels.b37.vcf",
+      "1000G": ".../1000G_phase1.snps.high_confidence.b37.vcf",
+      "cosmic": ".../CosmicCodingMuts.vcf",
+      "genomefa_GATK": "GATK_g1k_v37/human_g1k_v37.fasta",
+      "germline": "db_1000_indels_snvs/gnomad.exomes.r2.0.2.sites.vcf",
+      "vep_cache_refseq": "/home/.../.vep/homo_sapiens_refseq/92_GRCh37/"
+
+  },
+  "samples": {
+      "<SAMPLE_FASTQ_NAME>": {
+          "file_prefix": "<SAMPLE_FASTQ_NAME>",
+          "type": "tumor",
+          "readpair_suffix": ["1", "2"]
+      }
+ },
+  "bed": {
+      "variant_panel": "BED_files/BED.pad100.bed"
+  },
+  "QC": {
+      "adapter": "",
+      "min_seq_length": "25"
+  },
+  "vcf": {
+      "mutect": {
+        "default": "mutect.vcf",
+        "merged": "mutect.vcf.gz",
+        "type": "SNV"
+      },
+  },
+}
